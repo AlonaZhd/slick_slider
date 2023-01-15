@@ -1,0 +1,149 @@
+* {
+    --nero: #101418;
+    --darkgreen: #84B898;
+    --celadon: #ACCE9F;
+    --coolmint: #D8E7E2;
+    --tumbleweed: #C6DBCE;
+    --grey: #C2CCC8;        
+    --mint: #E5EDE8;
+    --white: #FFFFFF;
+    --peach: #F7B28F;
+}
+
+body {
+    height: 100%;
+    color: #101418;
+    background-color: #E5EDE8;
+}
+
+.body-wrapper {
+    height: 100%;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 125%;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 3.1rem;
+    line-height: 123%;
+}
+
+.main-container {
+    margin-top: 100px;
+}
+/* ========= header ========= */
+
+/* ========= main ========= */
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    min-width: 0;
+}
+.recipes-dscr {
+    text-align: center;
+}
+.recipes-slider {
+    position: relative;
+    padding: 0 70px;
+}
+.slider__item {
+}
+.button {
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: inset 0px 0px 0px 1px #067A46;
+    color: #067A46;
+    padding: 12px 24px;
+    display: block;
+    margin: 0 auto;
+    width: 158px;
+}
+
+/* ======= slider ======= */
+
+/* Слайдер */
+.slick-slider{
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #067A46;
+    border-radius: 50%;
+    font-size: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url(/slick_slider/img/arrow-left.svg) 40% 50% / 30% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url(/slick_slider/img/arrow-right.svg) 60% 50% / 30% no-repeat;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .recipes-slider {
+        padding: 0 20px;
+    }
+    .slick-arrow {
+        width: 20px;
+        height: 20px;
+    }
+    .slick-arrow.slick-prev {
+        left: -10px;
+    }
+    .slick-arrow.slick-next {
+        right: -10px;
+    }
+}
